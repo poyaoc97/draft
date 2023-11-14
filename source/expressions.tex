@@ -4561,7 +4561,9 @@ The unary \tcode{*} operator performs \defn{indirection}.
 Its operand shall be a prvalue of type ``pointer to \tcode{T}'',
 where \tcode{T} is an object or function type.
 The operator yields an lvalue of type \tcode{T}
-denoting the object or function to which the operand points.
+If the operand points to an object or function,
+the result denotes that object or function;
+otherwise, the behavior is undefined except as specified in \ref{expr.typeid}.
 \begin{note}
 \indextext{type!incomplete}%
 Indirection through a pointer to an incomplete type (other than
