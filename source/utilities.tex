@@ -8378,7 +8378,7 @@ template<class F> constexpr auto and_then(F&& f) const &;
 
 \begin{itemdescr}
 \pnum
-Let \tcode{U} be \tcode{remove_cvref_t<invoke_result_t<F, decltype(\exposid{val})>>}.
+Let \tcode{U} be \tcode{remove_cvref_t<invoke_result_t<F, decltype((\exposid{val}))>>}.
 
 \pnum
 \constraints
@@ -8443,7 +8443,7 @@ Let \tcode{G} be \tcode{remove_cvref_t<invoke_result_t<F, decltype(error())>>}.
 
 \pnum
 \constraints
-\tcode{is_constructible_v<T, decltype(\exposid{val})>} is \tcode{true}.
+\tcode{is_constructible_v<T, decltype((\exposid{val}))>} is \tcode{true}.
 
 \pnum
 \mandates
@@ -8501,7 +8501,7 @@ template<class F> constexpr auto transform(F&& f) const &;
 \begin{itemdescr}
 \pnum
 Let \tcode{U} be
-\tcode{remove_cv_t<invoke_result_t<F, decltype(\exposid{val})>>}.
+\tcode{remove_cv_t<invoke_result_t<F, decltype((\exposid{val}))>>}.
 
 \pnum
 \constraints
