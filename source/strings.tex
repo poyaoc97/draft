@@ -750,7 +750,9 @@ The program is ill-formed if \tcode{traits::char_type} is not the same type as \
 For a \tcode{basic_string_view str},
 any operation that invalidates a pointer
 in the range
-\range{str.data()}{str.data(\linebreak{}) + str.size()}
+\begin{codeblock}
+@\range{str.data()}{str.data() + str.size()}@
+\end{codeblock}
 invalidates pointers, iterators, and references
 to elements of \tcode{str}.
 
