@@ -15534,7 +15534,7 @@ namespace std {
   public:
     @\exposid{runtime-format-string}@(basic_string_view<charT> s) noexcept : @\exposid{str}@(s) {}
     @\exposid{runtime-format-string}@(const @\exposid{runtime-format-string}@&) = delete;
-    const @\exposid{runtime-format-string}@& operator=(const @\exposid{runtime-format-string}@&) = delete;
+    @\exposid{runtime-format-string}@& operator=(const @\exposid{runtime-format-string}@&) = delete;
   };
   @\exposid{runtime-format-string}@<char> runtime_format(string_view fmt) noexcept { return fmt; }
   @\exposid{runtime-format-string}@<wchar_t> runtime_format(wstring_view fmt) noexcept { return fmt; }
