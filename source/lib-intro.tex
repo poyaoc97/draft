@@ -939,6 +939,12 @@ As a result, looking up the name of such functions can vary
 between hosted and freestanding implementations.
 \end{note}
 \end{itemize}
+\begin{example}
+\begin{codeblock}
+// all freestanding
+namespace std {
+\end{codeblock}
+\end{example}
 
 \pnum
 \indextext{entity!freestanding item}%
@@ -967,6 +973,13 @@ that includes \textit{freestanding}, or
 that includes \textit{freestanding} and
 the definition is not followed by a comment that includes \textit{hosted}.
 \end{itemize}
+\begin{example}
+\begin{codeblock}
+#define NULL @\seebelow@      // freestanding
+\end{codeblock}
+\end{example}
+
+\pnum
 \begin{note}
 Freestanding annotations follow some additional exposition conventions
 that do not impose any additional normative requirements.
@@ -988,20 +1001,6 @@ struct array {
   constexpr reference       at(size_type n);            // freestanding-deleted
   constexpr const_reference at(size_type n) const;      // freestanding-deleted
 };
-\end{codeblock}
-\end{example}
-
-\pnum
-\begin{example}
-\begin{codeblock}
-#define NULL @\seebelow@      // freestanding
-\end{codeblock}
-\end{example}
-
-\begin{example}
-\begin{codeblock}
-// all freestanding
-namespace std {
 \end{codeblock}
 \end{example}
 
