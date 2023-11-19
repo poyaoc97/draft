@@ -13635,7 +13635,7 @@ is \tcode{true} for those overloads that take a \tcode{z} parameter.
 
 \pnum
 \complexity
-\bigoh{\tcode{x.extent(0)} \times \tcode{A.extent(1)}}
+\bigoh{\tcode{x.extent(0)} \times \tcode{A.extent(1)}}.
 
 \begin{itemdecl}
 template<@\exposconcept{in-matrix}@ InMat, @\exposconcept{in-vector}@ InVec, @\exposconcept{out-vector}@ OutVec>
@@ -13745,7 +13745,7 @@ for those overloads that take a \tcode{z} parameter.
 
 \pnum
 \complexity
-\bigoh{\tcode{x.extent(0)} \times \tcode{A.extent(1)}}
+\bigoh{\tcode{x.extent(0)} \times \tcode{A.extent(1)}}.
 
 \begin{itemdecl}
 template<@\exposconcept{in-matrix}@ InMat, class Triangle, @\exposconcept{in-vector}@ InVec, @\exposconcept{out-vector}@ OutVec>
@@ -13833,7 +13833,7 @@ is \tcode{true} for those overloads that take a \tcode{z} parameter.
 
 \pnum
 \complexity
-\bigoh{\tcode{x.extent(0)} \times \tcode{A.extent(1)}}
+\bigoh{\tcode{x.extent(0)} \times \tcode{A.extent(1)}}.
 
 \begin{itemdecl}
 template<@\exposconcept{in-matrix}@ InMat, class Triangle, @\exposconcept{in-vector}@ InVec, @\exposconcept{out-vector}@ OutVec>
@@ -13948,7 +13948,7 @@ Computes $y = A x$.
 
 \pnum
 \complexity
-\bigoh{\tcode{x.extent(0)} \times \tcode{A.extent(1)}}
+\bigoh{\tcode{x.extent(0)} \times \tcode{A.extent(1)}}.
 \end{itemdescr}
 
 \begin{itemdecl}
@@ -13979,7 +13979,7 @@ and assigns each element of $y'$ to the corresponding element of $y$.
 
 \pnum
 \complexity
-\bigoh{\tcode{y.extent(0)} \times \tcode{A.extent(1)}}
+\bigoh{\tcode{y.extent(0)} \times \tcode{A.extent(1)}}.
 \end{itemdescr}
 
 \begin{itemdecl}
@@ -14006,7 +14006,7 @@ Computes $z = y + A x$.
 
 \pnum
 \complexity
-\bigoh{\tcode{x.extent(0)} \times \tcode{A.extent(1)}}
+\bigoh{\tcode{x.extent(0)} \times \tcode{A.extent(1)}}.
 
 \pnum
 \remarks
@@ -14082,7 +14082,7 @@ then the elements of \tcode{x} are valid but unspecified.
 
 \pnum
 \complexity
-\bigoh{\tcode{A.extent(1)} \times \tcode{b.extent(0)}}
+\bigoh{\tcode{A.extent(1)} \times \tcode{b.extent(0)}}.
 \end{itemdescr}
 
 \begin{itemdecl}
@@ -14149,7 +14149,7 @@ then the elements of \tcode{b} are valid but unspecified.
 
 \pnum
 \complexity
-\bigoh{\tcode{A.extent(1)} \times \tcode{b.extent(0)}}
+\bigoh{\tcode{A.extent(1)} \times \tcode{b.extent(0)}}.
 \end{itemdescr}
 
 \begin{itemdecl}
@@ -14217,7 +14217,7 @@ and assigns each element of $A'$ to the corresponding element of $A$.
 
 \pnum
 \complexity
-\bigoh{\tcode{x.extent(0)} \times \tcode{y.extent(0)}}
+\bigoh{\tcode{x.extent(0)} \times \tcode{y.extent(0)}}.
 \end{itemdescr}
 
 \begin{itemdecl}
@@ -14293,7 +14293,7 @@ is \tcode{true}.
 
 \pnum
 \complexity
-\bigoh{\tcode{x.extent(0)} \times \tcode{x.extent(0)}}
+\bigoh{\tcode{x.extent(0)} \times \tcode{x.extent(0)}}.
 
 \begin{itemdecl}
 template<class Scalar, @\exposconcept{in-vector}@ InVec, @\exposconcept{possibly-packed-inout-matrix}@ InOutMat, class Triangle>
@@ -14419,7 +14419,7 @@ is \tcode{true}.
 
 \pnum
 \complexity
-\bigoh{\tcode{x.extent(0)} \times \tcode{y.extent(0)}}
+\bigoh{\tcode{x.extent(0)} \times \tcode{y.extent(0)}}.
 
 \begin{itemdecl}
 template<@\exposconcept{in-vector}@ InVec1, @\exposconcept{in-vector}@ InVec2,
@@ -14491,7 +14491,7 @@ is \tcode{true}.
 
 \pnum
 \complexity
-\bigoh{\tcode{A.extent(0)} \times \tcode{A.extent(1)} \times \tcode{B.extent(1)}}
+\bigoh{\tcode{A.extent(0)} \times \tcode{A.extent(1)} \times \tcode{B.extent(1)}}.
 
 \begin{itemdecl}
   template<@\exposconcept{in-matrix}@ InMat1, @\exposconcept{in-matrix}@ InMat2, @\exposconcept{out-matrix}@ OutMat>
@@ -14566,7 +14566,7 @@ is \tcode{true} for those overloads that take an \tcode{E} parameter.
 
 \pnum
 \complexity
-\bigoh{\tcode{A.extent(0)} \times \tcode{A.extent(1)} \times \tcode{B.extent(1)}}
+\bigoh{\tcode{A.extent(0)} \times \tcode{A.extent(1)} \times \tcode{B.extent(1)}}.
 
 \begin{itemdecl}
 template<@\exposconcept{in-matrix}@ InMat1, class Triangle, @\exposconcept{in-matrix}@ InMat2, @\exposconcept{out-matrix}@ OutMat>
@@ -14846,7 +14846,7 @@ assigns each element of $C'$ to the corresponding element of $C$.
 
 \pnum
 \complexity
-\bigoh{\tcode{A.extent(0)} \times \tcode{A.extent(1)} \times \tcode{C.extent(0)}}
+\bigoh{\tcode{A.extent(0)} \times \tcode{A.extent(1)} \times \tcode{C.extent(0)}}.
 \end{itemdescr}
 
 \begin{itemdecl}
@@ -14889,7 +14889,7 @@ assigns each element of $C'$ to the corresponding element of $C$.
 
 \pnum
 \complexity
-\bigoh{\tcode{A.extent(0)} \times \tcode{A.extent(1)} \times \tcode{C.extent(0)}}
+\bigoh{\tcode{A.extent(0)} \times \tcode{A.extent(1)} \times \tcode{C.extent(0)}}.
 \end{itemdescr}
 
 \rSec3[linalg.algs.blas3.rankk]{Rank-k update of a symmetric or Hermitian matrix}
@@ -14933,7 +14933,7 @@ is \tcode{true}.
 
 \pnum
 \complexity
-\bigoh{\tcode{A.extent(0)} \times \tcode{A.extent(1)} \times \tcode{C.extent(0)}}
+\bigoh{\tcode{A.extent(0)} \times \tcode{A.extent(1)} \times \tcode{C.extent(0)}}.
 
 \begin{itemdecl}
   template<class Scalar, @\exposconcept{in-matrix}@ InMat, @\exposconcept{possibly-packed-inout-matrix}@ InOutMat, class Triangle>
@@ -15037,8 +15037,7 @@ is \tcode{true}.
 
 \pnum
 \complexity
-\bigoh{
-\tcode{A.extent(0)} \times \tcode{A.extent(1)} \times \tcode{C.extent(0)}}
+\bigoh{\tcode{A.extent(0)} \times \tcode{A.extent(1)} \times \tcode{C.extent(0)}}.
 
 \begin{itemdecl}
 template<@\exposconcept{in-matrix}@ InMat1, @\exposconcept{in-matrix}@ InMat2,
@@ -15133,7 +15132,7 @@ then the elements of \tcode{X} are valid but unspecified.
 
 \pnum
 \complexity
-\bigoh{\tcode{A.extent(0)} \times \tcode{X.extent(1)} \times \tcode{X.extent(1)}}
+\bigoh{\tcode{A.extent(0)} \times \tcode{X.extent(1)} \times \tcode{X.extent(1)}}.
 \end{itemdescr}
 
 \pnum
@@ -15340,7 +15339,7 @@ then the elements of \tcode{B} are valid but unspecified.
 
 \pnum
 \complexity
-\bigoh{\tcode{A.extent(0)} \times \tcode{A.extent(1)} \times \tcode{B.extent(1)}}
+\bigoh{\tcode{A.extent(0)} \times \tcode{A.extent(1)} \times \tcode{B.extent(1)}}.
 \end{itemdescr}
 
 \begin{itemdecl}
@@ -15434,7 +15433,7 @@ then the elements of \tcode{B} are valid but unspecified.
 
 \pnum
 \complexity
-\bigoh{\tcode{A.extent(0)} \times \tcode{A.extent(1)} \times \tcode{B.extent(1)}}
+\bigoh{\tcode{A.extent(0)} \times \tcode{A.extent(1)} \times \tcode{B.extent(1)}}.
 \end{itemdescr}
 
 \begin{itemdecl}
