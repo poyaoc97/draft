@@ -11947,6 +11947,7 @@ shall not overlap any other \tcode{mdspan} parameter of the function.
 
 \rSec3[linalg.helpers.mandates]{Mandates}
 
+\pnum
 \begin{note}
 These exposition-only helper functions use
 the less constraining input concepts even for the output arguments,
@@ -12005,6 +12006,7 @@ template<@\exposconcept{in-matrix}@ InMat1, @\exposconcept{in-matrix}@ InMat2, @
 
 \rSec3[linalg.helpers.precond]{Preconditions}
 
+\pnum
 \begin{note}
 These exposition-only helper functions use
 the less constraining input concepts even for the output arguments,
@@ -12853,6 +12855,7 @@ template<class ExecutionPolicy, @\exposconcept{inout-vector}@ InOutVec1, @\expos
 \end{itemdecl}
 
 \begin{itemdescr}
+\pnum
 \begin{note}
 These functions correspond to the BLAS function \tcode{xROT}\supercite{blas1}.
 \end{note}
@@ -12884,6 +12887,7 @@ template<class ExecutionPolicy, @\exposconcept{inout-object}@ InOutObj1, @\expos
 \end{itemdecl}
 
 \begin{itemdescr}
+\pnum
 \begin{note}
 These functions correspond to the BLAS function \tcode{xSWAP}\supercite{blas1}.
 \end{note}
@@ -12919,6 +12923,7 @@ template<class ExecutionPolicy, class Scalar, @\exposconcept{inout-object}@ InOu
 \end{itemdecl}
 
 \begin{itemdescr}
+\pnum
 \begin{note}
 These functions correspond to the BLAS function \tcode{xSCAL}\supercite{blas1}.
 \end{note}
@@ -12940,6 +12945,7 @@ template<class ExecutionPolicy, @\exposconcept{in-object}@ InObj, @\exposconcept
 \end{itemdecl}
 
 \begin{itemdescr}
+\pnum
 \begin{note}
 These functions correspond to the BLAS function \tcode{xCOPY\supercite{blas1}}.
 \end{note}
@@ -12976,6 +12982,7 @@ template<class ExecutionPolicy, @\exposconcept{in-object}@ InObj1, @\exposconcep
 \end{itemdecl}
 
 \begin{itemdescr}
+\pnum
 \begin{note}
 These functions correspond to the BLAS function \tcode{xAXPY}\supercite{blas1}.
 \end{note}
@@ -13003,6 +13010,7 @@ Computes $z = x + y$.
 
 \rSec3[linalg.algs.blas1.dot]{Dot product of two vectors}
 
+\pnum
 \begin{note}
 The functions in this section correspond to the BLAS
 functions \tcode{xDOT}, \tcode{xDOTU}, and \tcode{xDOTC}\supercite{blas1}.
@@ -13157,6 +13165,7 @@ template<class ExecutionPolicy, @\exposconcept{in-vector}@ InVec, class Scalar>
 \end{itemdecl}
 
 \begin{itemdescr}
+\pnum
 \begin{note}
 These functions correspond to the LAPACK function \tcode{xLASSQ}\supercite{lapack}.
 \end{note}
@@ -13203,6 +13212,7 @@ template<class ExecutionPolicy, @\exposconcept{in-vector}@ InVec, class Scalar>
 \end{itemdecl}
 
 \begin{itemdescr}
+\pnum
 \begin{note}
 These functions correspond to the BLAS function \tcode{xNRM2}\supercite{blas1}.
 \end{note}
@@ -13274,6 +13284,7 @@ template<class ExecutionPolicy, @\exposconcept{in-vector}@ InVec, class Scalar>
 \end{itemdecl}
 
 \begin{itemdescr}
+\pnum
 \begin{note}
 These functions correspond to the BLAS functions
 \tcode{SASUM}, \tcode{DASUM}, \tcode{SCASUM}, and \tcode{DZASUM}\supercite{blas1}.
@@ -13354,6 +13365,7 @@ template<class ExecutionPolicy, @\exposconcept{in-vector}@ InVec>
 \end{itemdecl}
 
 \begin{itemdescr}
+\pnum
 \begin{note}
 These functions correspond to the BLAS function \tcode{IxAMAX}\supercite{blas1}.
 \end{note}
@@ -13391,6 +13403,7 @@ has the largest value.
 
 \rSec3[linalg.algs.blas1.matfrobnorm]{Frobenius norm of a matrix}
 
+\pnum
 \begin{note}
 These functions exist in the BLAS standard\supercite{blas-std}
 but are not part of the reference implementation.
@@ -13461,6 +13474,7 @@ return matrix_frob_norm(std::forward<ExecutionPolicy>(exec), A, T{});
 
 \rSec3[linalg.algs.blas1.matonenorm]{One norm of a matrix}
 
+\pnum
 \begin{note}
 These functions exist in the BLAS standard\supercite{blas-std}
 but are not part of the reference implementation.
@@ -13532,6 +13546,7 @@ return matrix_one_norm(std::forward<ExecutionPolicy>(exec), A, T{});
 
 \rSec3[linalg.algs.blas1.matinfnorm]{Infinity norm of a matrix}
 
+\pnum
 \begin{note}
 These functions exist in the BLAS standard\supercite{blas-std}
 but are not part of the reference implementation.
@@ -13608,6 +13623,7 @@ return matrix_inf_norm(std::forward<ExecutionPolicy>(exec), A, T{});
 
 \rSec3[linalg.algs.blas2.gemv]{General matrix-vector product}
 
+\pnum
 \begin{note}
 These functions correspond to the BLAS function \tcode{xGEMV}.
 \end{note}
@@ -13708,6 +13724,7 @@ void scaled_matvec_2(mdspan<double, extents<size_t, num_rows, num_cols>> A,
 
 \rSec3[linalg.algs.blas2.symv]{Symmetric matrix-vector product}
 
+\pnum
 \begin{note}
 These functions correspond to the BLAS functions
 \tcode{xSYMV} and \tcode{xSPMV}\supercite{blas2}.
@@ -13796,6 +13813,7 @@ Computes $z = y + A x$.
 
 \rSec3[linalg.algs.blas2.hemv]{Hermitian matrix-vector product}
 
+\pnum
 \begin{note}
 These functions correspond to the BLAS functions
 \tcode{xHEMV} and \tcode{xHPMV}\supercite{blas2}.
@@ -13883,6 +13901,7 @@ Computes $z = y + A x$.
 
 \rSec3[linalg.algs.blas2.trmv]{Triangular matrix-vector product}
 
+\pnum
 \begin{note}
 These functions correspond to the BLAS functions
 \tcode{xTRMV} and \tcode{xTPMV}\supercite{blas2}.
@@ -14017,6 +14036,7 @@ Computes $z = y + A x$.
 
 \rSec3[linalg.algs.blas2.trsv]{Solve a triangular linear system}
 
+\pnum
 \begin{note}
 These functions correspond to the BLAS functions
 \tcode{xTRSV} and \tcode{xTPSV}\supercite{blas2}.
@@ -14387,6 +14407,7 @@ assigns each element of $A'$ to the corresponding element of $A$.
 
 \rSec3[linalg.algs.blas2.rank2]{Symmetric and Hermitian rank-2 matrix updates}
 
+\pnum
 \begin{note}
 These functions correspond to the BLAS functions
 \tcode{xSYR2},\tcode{xSPR2}, \tcode{xHER2} and \tcode{xHPR2}\supercite{blas2}.
@@ -14473,6 +14494,7 @@ assigns each element of $A'$ to the corresponding element of $A$.
 
 \rSec3[linalg.algs.blas3.gemm]{General matrix-matrix product}
 
+\pnum
 \begin{note}
 These functions correspond to the BLAS function \tcode{xGEMM}\supercite{blas3}.
 \end{note}
@@ -14536,6 +14558,7 @@ Computes $C = E + A B$.
 
 \rSec3[linalg.algs.blas3.xxmm]{Symmetric, Hermitian, and triangular matrix-matrix product}
 
+\pnum
 \begin{note}
 These functions correspond to the BLAS functions
 \tcode{xSYMM}, \tcode{xHEMM}, and \tcode{xTRMM}\supercite{blas3}.
@@ -14896,6 +14919,7 @@ assigns each element of $C'$ to the corresponding element of $C$.
 
 \rSec3[linalg.algs.blas3.rankk]{Rank-k update of a symmetric or Hermitian matrix}
 
+\pnum
 \begin{note}
 These functions correspond to the BLAS functions
 \tcode{xSYRK} and \tcode{xHERK}\supercite{blas3}.
@@ -15005,6 +15029,7 @@ assigns each element of $C'$ to the corresponding element of $C$.
 
 \rSec3[linalg.algs.blas3.rank2k]{Rank-2k update of a symmetric or Hermitian matrix}
 
+\pnum
 \begin{note}
 These functions correspond to the BLAS functions
 \tcode{xSYR2K} and \tcode{xHER2K}\supercite{blas3}.
@@ -15078,6 +15103,7 @@ and assigns each element of $C'$ to the corresponding element of $C$.
 
 \rSec3[linalg.algs.blas3.trsm]{Solve multiple triangular linear systems}
 
+\pnum
 \begin{note}
 These functions correspond to the BLAS function \tcode{xTRSM}\supercite{blas3}.
 \end{note}
@@ -15279,6 +15305,7 @@ triangular_matrix_matrix_right_solve(std::forward<ExecutionPolicy>(exec),
 
 \rSec3[linalg.algs.blas3.inplacetrsm]{Solve multiple triangular linear systems in-place}
 
+\pnum
 \begin{note}
 These functions correspond to the BLAS function \tcode{xTRSM}\supercite{blas3}.
 \end{note}
@@ -15390,7 +15417,6 @@ template<class ExecutionPolicy, @\exposconcept{in-matrix}@ InMat, class Triangle
 \end{itemdecl}
 
 \begin{itemdescr}
-
 \pnum
 These functions perform multiple in-place matrix solves,
 taking into account the \tcode{Triangle} and \tcode{DiagonalStorage} parameters
